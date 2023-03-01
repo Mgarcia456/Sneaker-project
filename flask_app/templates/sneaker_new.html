@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css">
+  <link rel="stylesheet" href="{{url_for('static',filename='sneaker_new.css')}}">
+  <title>Document</title>
+</head>
+<body>
+  <section>
+    <nav>
+      <div class="logo">
+        <h1>Sneakers<span> World</span></h1>
+      </div>
+      <ul>
+        <li><a href="#">home</a></li>
+        <li><a href="#">About</a></li>
+        <li><a href="#">Sell</a></li>
+        <li><a href="#">Reviews</a></li>
+        <li><a href="#">Cart</a></li>
+        <li><a href="#">Log-out</a></li>
+      </ul>
+    </nav>
+  </section>
+  <div class="wrapper">
+    <div class="form-wrapper sign-in">
+      <form action="/sell" method="post">
+        <h2>Sell Your Sneaker</h2>
+        <div class="input-group">
+          <input type="text" required>
+          <label for=""> Brand*</label>
+        </div>
+        <div class="input-group">
+          <input type="text" required>
+          <label for=""> Model*</label>
+        </div>
+        <div class="input-group">
+          <input type="text" required>
+          <label for=""> Size*</label>
+        </div>
+        <div class="input-group">
+          <input type="text" required>
+          <label for=""> Price*</label>
+        </div>
+        <input type="file" id="file" accept="image/*" hidden>
+        <div class="img-area active" data-img="">
+          <i class="fa-solid fa-cloud-arrow-up"></i>
+          <h3>Upload image</h3>
+          <p> Image must be less than <span>2MB</span> </p>
+          <img src="images/*" alt="">
+        </div>
+        <input type="file"  class="select-image" required>
+        <div class="submit.btn">
+        <button type="submit" class="submit-btn">Sell Sneaker</button>
+        </div>
+
+  </div>
+  <script src="view_all.js"></script>
+</body>
+</html>

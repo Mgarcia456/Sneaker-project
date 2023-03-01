@@ -1,0 +1,232 @@
+@import url('https://fonts.googleapis.com/css2?family=Fredoka+One&display=swap');
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Fredoka One', cursive;
+}
+html{
+  scroll-behavior: smooth;
+}
+::-webkit-scrollbar{
+  width: 15px;
+}
+::-webkit-scrollbar-track{
+  border-radius: 5px;
+  box-shadow: inset 0 0 10px rgba(0, 0, 0, .05);
+}
+::-webkit-scrollbar-thumb{
+  border-radius: 5px;
+  background: linear-gradient(to top, #f64f59, #c471ed, #12c2e9);
+}
+section {
+  width: 100%;
+  background:white
+
+}
+section nav{
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  box-shadow: 0 0 8px rgba(0, 0, 0, .6);
+  background: linear-gradient(45deg, #f64f59, #c471ed, #12c2e9,rgb(6, 254, 175));
+  background-size: 300% 300%;
+  animation: color 12s ease-in-out infinite;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 100;
+}
+section nav .logo{
+  font-size: 35px;
+  color: white;
+  margin: 5px 0 ;
+  cursor: pointer;
+  position: relative;
+  left: -4%;
+}
+section nav .logo span{
+  color: white;
+}
+section nav ul{
+  list-style: none;
+}
+section nav ul li {
+  display: inline-block;
+  margin: 5px 15px;
+}
+section nav ul li a{
+  text-decoration: none;
+  color: white;
+  transition: 0.2s;
+}
+section nav ul li a:hover{
+  color: #c72092;
+}
+/*     form sell your shoe */
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background: linear-gradient(45deg, #f64f59, #c471ed, #12c2e9,rgb(6, 254, 175));
+  background-size: 300% 300%;
+  animation: color 12s ease-in-out infinite;
+}
+@keyframes color{
+  0%{
+    background-position: 0 50%;
+  }
+  50%{
+    background-position: 100% 50%;
+  }
+  100%{
+    background-position: 0 50%;
+  }
+}
+.wrapper {
+  position: absolute;
+  width: 500px;
+  height: 750px;
+  background: rgba(255,255,255, .2);
+  border-radius: 20px;
+  box-shadow: 0 0 50px rgba(0, 0, 0, .1);
+  padding: 40px;
+}
+.form-wrapper {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  transition: 1s ease-in-out;
+}
+
+h2 {
+  font-size: 30px;
+  color: #fff;
+  text-align: center;
+}
+.input-group {
+  position: relative;
+  margin: 30px 0;
+  border-bottom: 2px solid #fff;
+}
+.input-group label{
+  position: absolute;
+  top: 50%;
+  left: 5px;
+  transform: translateY(-50%);
+  font-size: 16px;
+  color: #fff;
+  pointer-events: none;
+  transition: .5s;
+}
+.input-group input {
+  width: 320px;
+  height: 40px;
+  font-size: 16px;
+  color: #fff;
+  padding: 0 5px;
+  background: transparent;
+  border: none;
+  outline: none;
+}
+.input-group input:focus~label,
+.input-group input:valid~label{
+  top: -5px;
+
+}
+
+button {
+  position: relative;
+  width: 100%;
+  height: 40px;
+  background: #f4157e;
+  font-size: 16px;
+  color: #fff;
+  cursor: pointer;
+  border-radius: 30px;
+  border: none;
+  outline: none;
+  margin-top: 6px;
+}
+/*   image areaa */
+.img-area{
+  width: 100%;
+  height: 240px;
+  background: rgba(255,255,255, .2);
+  border-radius: 20px;
+  box-shadow: 0 0 50px rgba(0, 0, 0, .1);
+  margin-bottom: 30px;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.img-area i{
+  font-size: 100px;
+  color: #c72092;
+}
+.img-area h3{
+  color: #c72092;
+  font-size: 20px;
+  font-weight: 200;
+  margin-bottom: 6px;
+}
+.img-area p{
+  color: #c72092;
+}
+.img-area p span{
+  color: purple;
+}
+.img-area img{
+  width: 100%;
+  position: absolute;
+  object-fit: cover;
+  object-position: center;
+  z-index: 100;
+}
+.img-area::before{
+  content: attr(data-img);
+  width: 59%;
+  height: 28%;
+  position: absolute;
+  left: 52px;
+  bottom: 21%;
+  background: rgba(0, 0, 0, .13);
+  color: #fff;
+  font-weight: 500;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  pointer-events: none;
+  opacity: 0;
+  transition: all .3s ease;
+  z-index: 200;
+}
+.img-area.active:hover::before {
+  opacity: 1;
+
+
+}
+.select-image:hover{
+  background: linear-gradient(to right, #c72092,purple);
+}
+.submit-btn:hover{
+  background: linear-gradient(to right, #c72092,purple);
+}
+.select-image{
+  font-size: 16px;
+  background: #c72092;
+  border-radius: 50px;
+  width: 350px;
+  outline: none;
+}
+::-webkit-file-upload-button{
+  color: #fff;
+  background: #c72092;
+  border: none;
+}

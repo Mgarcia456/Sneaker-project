@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="{{url_for('static',filename='dashboard.css')}}">
+  <link rel="stylesheet"
+  href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
+  <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css">
+  <title>Dashboard</title>
+</head>
+<body>
+  <header>
+    <a href="#" class="logo"> Sneaker World</a>
+    <ul class="navlist">
+      <li><a href="#"> Home</a></li>
+      <li><a href="#">About</a></li>
+      <li><a href="#">View All</a></li>
+      <li><a href="#">Login</a></li>
+      <li><a href="#">Sign Up</a></li>
+    </ul>
+    <div class="bx bx-menu" id="menu-icon"></div>
+  </header>
+  <section class="travis">
+    <div class="travis-text">
+      <h5>#1 Top Selling</h5>
+      <h4>Jordan 1 High</h4>
+      <h1>Travis Scott Mocha 1s</h1>
+      <p>The Travis Scott x Air Jordan 1 Retro High features a new look on the iconic silhouette, thanks to an oversized backward-facing Swoosh on the lateral side. A traditionally oriented Swoosh graces the medial side of the upper, which is built with a blend of white leather and brown suede.</p>
+      <a href="https://stockx.com/air-jordan-1-retro-high-travis-scott">Compare Price</a>
+      <a href="https://www.youtube.com/watch?v=nxqz5fBNfzk&ab_channel=SethFowler" class="ctaa"><i class="ri-play-fill"></i>Watch Review</a>
+    </div>
+
+    <div class="travis-img">
+      <img src="{{url_for('images',filename='images/TravisScottAirJordan1.png')}}" alt="travis-scotts-1">
+    </div>
+
+  </section>
+
+  <div class="icons">
+    <a href="#"><i class="ri-instagram-line"></i></a>
+    <a href="#"><i class="ri-youtube-line"></i></a>
+    <a href="#"><i class="ri-facebook-fill"></i></a>
+  </div>
+
+  <div class="scroll-down">
+    <a href="#"><i class="ri-arrow-down-s-fill"></i></a>
+  </div>
+
+  <div class="products" id="products">
+    <h1>Quick view</h1>
+    <div class="box">
+      <div class="card">
+          
+          <div class="small_card">
+            <i class="fa-solid fa-heart"></i>
+            <i class="fa-solid fa-share"></i>
+          </div>
+          <div class="image">
+            <img src="{{url_for('images',filename='images/TravisScottAirJordan1.png')}}" alt="travis1">
+          </div>
+          <div class="products_text">
+            <h2>Jordan</h2>
+            <p>iujehbdiued uwiebf we fuiewbwef uewif wuiuwe bfuwiebf uwb ifw</p>
+            <h3>$1200.99</h3>
+            <div class="products_star">
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+            </div>
+            <a href="#" class="btn">Add To Cart</a>
+          </div>
+
+      </div>
+
+      <div class="card">
+          
+        <div class="small_card">
+          <i class="fa-solid fa-heart"></i>
+          <i class="fa-solid fa-share"></i>
+        </div>
+        <div class="image">
+          <img src="{{url_for('images',filename='images/Air-Jordan.png')}}" alt="jordan1" class="jordan1">
+        </div>
+        <div class="products_text">
+          <h2>Jordan 1</h2>
+          <p>iujehbdiued uwiebf we fuiewbwef uewif wuiuwe bfuwiebf uwb ifw</p>
+          <h3>$500.99</h3>
+          <div class="products_star">
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+          </div>
+          <a href="#" class="btn">Add To Cart</a>
+        </div>
+
+      </div>
+
+    <div class="card">
+          
+      <div class="small_card">
+        <i class="fa-solid fa-heart"></i>
+        <i class="fa-solid fa-share"></i>
+      </div>
+      <div class="image">
+        <img src="{{url_for('images',filename='images/jordan 5.png')}}" alt="jordan 5" class="jordan 5">
+      </div>
+      <div class="products_text">
+        <h2>Jordan 5</h2>
+        <p>iujehbdiued uwiebf we fuiewbwef uewif wuiuwe bfuwiebf uwb ifw</p>
+        <h3>$450.99</h3>
+        <div class="products_star">
+          <i class="fa-solid fa-star"></i>
+          <i class="fa-solid fa-star"></i>
+          <i class="fa-solid fa-star"></i>
+          <i class="fa-solid fa-star"></i>
+          <i class="fa-solid fa-star"></i>
+        </div>
+        <a href="#" class="btn">Add To Cart</a>
+      </div>
+
+    </div>
+
+    <div class="card">
+          
+      <div class="small_card">
+        <i class="fa-solid fa-heart"></i>
+        <i class="fa-solid fa-share"></i>
+      </div>
+      <div class="image">
+        <img src="{{url_for('images',filename='images/jordan4.png')}}" alt="travis1" class="jordan4">
+      </div>
+      <div class="products_text">
+        <h2>Jordan 4</h2>
+        <p>iujehbdiued uwiebf we fuiewbwef uewif wuiuwe bfuwiebf uwb ifw</p>
+        <h3>$1100.99</h3>
+        <div class="products_star">
+          <i class="fa-solid fa-star"></i>
+          <i class="fa-solid fa-star"></i>
+          <i class="fa-solid fa-star"></i>
+          <i class="fa-solid fa-star"></i>
+          <i class="fa-solid fa-star"></i>
+        </div>
+        <a href="#" class="btn">Add To Cart</a>
+      </div>
+
+    </div>
+
+    <div class="card">
+          
+      <div class="small_card">
+        <i class="fa-solid fa-heart"></i>
+        <i class="fa-solid fa-share"></i>
+      </div>
+      <div class="image">
+        <img src="{{url_for('images',filename='images/jordan-air-jordan-3-.png')}}" alt="jordan 3" class="jordan3">
+      </div>
+      <div class="products_text">
+        <h2>Jordan</h2>
+        <p>iujehbdiued uwiebf we fuiewbwef uewif wuiuwe bfuwiebf uwb ifw</p>
+        <h3>$250.99</h3>
+        <div class="products_star">
+          <i class="fa-solid fa-star"></i>
+          <i class="fa-solid fa-star"></i>
+          <i class="fa-solid fa-star"></i>
+          <i class="fa-solid fa-star"></i>
+          <i class="fa-regular fa-star"></i>
+        </div>
+        <a href="#" class="btn">Add To Cart</a>
+      </div>
+
+    </div>
+
+    <div class="card">
+          
+      <div class="small_card">
+        <i class="fa-solid fa-heart"></i>
+        <i class="fa-solid fa-share"></i>
+      </div>
+      <div class="image">
+        <img src="{{url_for('images',filename='images/jordan-kids-air-jordan-12-.png')}}" alt="jordan12" class="jordan12">
+      </div>
+      <div class="products_text">
+        <h2>Jordan 12</h2>
+        <p>iujehbdiued uwiebf we fuiewbwef uewif wuiuwe bfuwiebf uwb ifw</p>
+        <h3>$300.99</h3>
+        <div class="products_star">
+          <i class="fa-solid fa-star"></i>
+          <i class="fa-solid fa-star"></i>
+          <i class="fa-solid fa-star"></i>
+          <i class="fa-solid fa-star-half-stroke"></i>
+          <i class="fa-regular fa-star"></i>
+        </div>
+        <a href="#" class="btn">Add To Cart</a>
+      </div>
+
+    </div>
+
+    <div class="card">
+          
+      <div class="small_card">
+        <i class="fa-solid fa-heart"></i>
+        <i class="fa-solid fa-share"></i>
+      </div>
+      <div class="image">
+        <img src="{{url_for('images',filename='images/jordan4.png')}}" alt="jordan 4" class="jordan 4">
+      </div>
+      <div class="products_text">
+        <h2>Jordan 6</h2>
+        <p>iujehbdiued uwiebf we fuiewbwef uewif wuiuwe bfuwiebf uwb ifw</p>
+        <h3>$600.99</h3>
+        <div class="products_star">
+          <i class="fa-solid fa-star"></i>
+          <i class="fa-solid fa-star"></i>
+          <i class="fa-solid fa-star"></i>
+          <i class="fa-solid fa-star"></i>
+          <i class="fa-solid fa-star"></i>
+        </div>
+        <a href="#" class="btn">Add To Cart</a>
+      </div>
+
+    </div>
+
+    <div class="card">
+          
+      <div class="small_card">
+        <i class="fa-solid fa-heart"></i>
+        <i class="fa-solid fa-share"></i>
+      </div>
+      <div class="image">
+        <img src="{{url_for('images',filename='images/jordan 11.png')}}" alt="jordan 11" class="jordan11">
+      </div>
+      <div class="products_text">
+        <h2>Jordan</h2>
+        <p>iujehbdiued uwiebf we fuiewbwef uewif wuiuwe bfuwiebf uwb ifw</p>
+        <h3>$1200.99</h3>
+        <div class="products_star">
+          <i class="fa-solid fa-star"></i>
+          <i class="fa-solid fa-star"></i>
+          <i class="fa-solid fa-star"></i>
+          <i class="fa-solid fa-star"></i>
+          <i class="fa-solid fa-star-half-stroke"></i>
+        </div>
+        <a href="#" class="btn">Add To Cart</a>
+      </div>
+
+    </div>
+    
+    </div>
+  </div>
+  <!-- footer -->
+  <footer>
+    <div class="footer_main">
+      <div class="tag">
+        <h1>Contact</h1>
+        <a href="#"><i class="fa-solid fa-house"></i>12345/miami/florida</a>
+        <a href="#"><i class="fa-solid fa-phone"></i>+97 782 564 1234</a>
+        <a href="#"><i class="fa-solid fa-envelope"></i>fakeEmail@fake.com</a>
+      </div>
+      <div class="tag">
+        <h1>Get Help</h1>
+        <a href="#" class="center">Faq</a>
+        <a href="#" class="center">Shipping</a>
+        <a href="#" class="center">Returns</a>
+        <a href="#" class="center">Payment Options</a>
+      </div>
+      <div class="tag">
+        <h1>Our Stores</h1>
+        <a href="#" class="center">Miami</a>
+        <a href="#" class="center">Hollywood</a>
+        <a href="#" class="center">San Diego</a>
+        <a href="#" class="center">Seattle</a>
+        
+      </div>
+      <div class="tag">
+        <h1>Follow us</h1>
+        <div class="social_link">
+          <a href="#"><i class="fa-brands fa-facebook"></i></a>
+          <a href="#"><i class="fa-brands fa-instagram"></i></a>
+          <a href="#"><i class="fa-brands fa-twitter"></i></a>
+          <a href="#"><i class="fa-brands fa-linkedin"></i></a>
+        </div>
+        
+      </div>
+      <div class="tag">
+        <h1>Newsletter</h1>
+        <div class="search_bar">
+          <input type="text" placeholder="you're email here">
+          <button type="submit">Subscribe</button>
+        </div>
+        
+      </div>
+    </div>
+  </footer>
+  <script src="https://unpkg.com/scrollreveal"></script>
+  <script src="dashboard.js"></script>
+</body>
+</html>

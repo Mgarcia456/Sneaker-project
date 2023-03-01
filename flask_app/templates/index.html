@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css">
+  <link rel="stylesheet" href="{{url_for('static',filename='style.css')}}">
+  <title>Login and Sign-up</title>
+</head>
+<body>
+  <div class="container">
+    <div class="form-box">
+      <div class="button-box">
+        <div id="btn"></div>
+        <button type="button" class="toggle-btn" onclick="Login()">Login</button>
+        <button type="button" class="toggle-btn" onclick="Register()">Register</button>
+      </div>
+      <div class="social-icons">
+        <i class="fa-brands fa-facebook"></i>
+        <i class="fa-brands fa-instagram"></i>
+        <i class="fa-brands fa-twitter"></i>
+      </div>
+      <form action="" id="Login" class="input-group">
+        <input type="email" class="input-field" placeholder="email" required>
+        <input type="password" class="input-field" placeholder="Password" required>
+        <input type="checkbox" class="check-box"><span>Remember Password</span>
+        <button type="submit" class="submit-btn">Login</button>
+      </form>
+      <form action="" id="Register" class="input-group">
+        <input type="text" class="input-field" placeholder="First name" required>
+        <input type="text" class="input-field" placeholder="Last name" required>
+        <input type="email" class="input-field" placeholder="email" required>
+        <input type="password" class="input-field" placeholder="Password" required>
+        <input type="password" class="input-field" placeholder=" Confirm Password" required>
+        <input type="checkbox" class="check-box"><span>I agree to the terms & conditions</span>
+        <button type="submit" class="submit-btn">Register</button>
+      </form>
+    </div>
+
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
